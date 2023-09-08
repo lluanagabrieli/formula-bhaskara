@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --azul-background: rgb(167, 196, 201);
+    --azul-formulario: rgb(107, 134, 194);
+    --azul-titulo: rgb(34, 91, 177);
+    --roxo-botoes-sublinhado: rgb(177, 58, 151);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    height: 100vh;
+    background-color: var(--azul-background);
+}
+
+.primeiraSecao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--azul-formulario);
+    width: 50%;
+    height: 70%;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.formulario__titulo {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.formulario__label {
+    text-align: left;
+    margin: 18px 0 10px 0; 
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.formulario__botoes {
+    margin-top: 25px;
+}
+
+.formulario__botoes button {
+    padding: 8px;
+    border: none;
+    background-color: var(--roxo-botoes-sublinhado);
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.925);
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    border: 1px solid var(--roxo-botoes-sublinhado);
+    color: black;
+    background-color: rgb(107, 134, 194);
+}
+
+.formulario input {
+    border: 1px solid rgb(230, 230, 230);
+    box-shadow: 2px 5px 5px 0 grey;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.segundaSecao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.segundaSecao__titulo {
+    font-size: 50px;
+    color: var(--azul-titulo);
+}
+
+h1.segundaSecao__titulo:after {
+    display: block;
+    content: "";
+    padding-top: 3px;
+    width: 100px;
+    border-bottom: 6px solid var(--roxo-botoes-sublinhado);
+}
+
+.segundaSecao__resultados h1 {
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+@media (max-width:900px){
+    .container {
+        display: block;
+    }
+
+    .formulario,
+    .segundaSecao {
+        margin-top: 50px;
+    }
+}

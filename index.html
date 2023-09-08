@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Formulário</title>
+</head>
+<body>
+    <header></header>
+
+    <!-- criação do conteúdo principal da página. Dentro do container temos a primeira seção da página, contendo o formulário e seus botões e a segunda seção que ficará responsável pela exibição do resultado. -->
+    <main class="container">
+        <section class="primeiraSecao">
+            <form class="formulario">
+                    <h1 class="formulario__titulo">Fórmula de Bhaskara</h1>
+
+                    <!-- campos para a entrada dos valores-->
+                    <label for="a" class="formulario__label">Digite o valor de A:</label>
+                    <input type="number" id="a" placeholder="A" required>
+    
+                    <label for="b" class="formulario__label">Digite o valor de B:</label>
+                    <input type="number" id="b" placeholder="B" required>
+    
+                    <label for="c" class="formulario__label">Digite o valor de C:</label>
+                    <input type="number" id="c" placeholder="C" required>
+    
+                    <div class="formulario__botoes">
+                        <button type="button" onclick="calcular()">Calcular</button>
+                        <button type="button" onclick="limparDados()">Limpar</button>
+                    </div>
+            </form>
+        </section>
+
+        <!-- segunda seção-->
+        <section class="segundaSecao">
+            <h1 class="segundaSecao__titulo">Resultado:</h1>
+            <div class="segundaSecao__resultados">
+                <h1 id="resultadoX1"></h1>
+                <h1 id="resultadoX2"></h1>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
