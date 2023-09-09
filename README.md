@@ -9,3 +9,6 @@ O que foi feito:
 - para pegar os valores dos campos - inputs - foi utilizado o DOM;
 - foi utilizado uma condicional if para fazer a validação dos dados caso o usuário clique no botão "calcular" e os campos não estejam preenchidos;
 - também foi utilizado a manipulação do DOM para imprimir os resultados e na função responsável pela limpeza deles.
+
+## Visualização: 
+https://lluanagabrieli.github.io/formula-bhaskara/
