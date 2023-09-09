@@ -1,4 +1,4 @@
-# formula-bhaskara
+# Fórmula de Bhaskara
 Página web com 2 colunas, uma com um formulário e outra com o resultado.
 O formulário é responsável pela realização da fórmula de Bhaskara, fazendo assim o cálculo de delta e depois os cálculos das raízes x1 e x2. Nele contém dois botões, um para calcular e outro para limpar os dados dos campos e resultados.
 
